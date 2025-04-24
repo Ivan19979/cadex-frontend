@@ -1,36 +1,31 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# CAD Exchanger Frontend Assignment
 
-## Getting Started
+## Setup
 
-First, run the development server:
+1. Clone the repository
+2. Run `npm install`
+3. Run `npm run dev` for development
+4. Run `npm run build` && `npm start` for production
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Hosting
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The project is deployed on Vercel: [Live Demo](https://your-vercel-app.vercel.app)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Technical Choices
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Framework**: Next.js for SSR, routing and API routes
+- **UI Library**: Material-UI for components and theming
+- **Form Handling**: react-hook-form for form validation and submission
+- **YouTube Embed**: lite-youtube-embed for better LCP performance
+- **Styling**: Emotion CSS-in-JS with Material-UI's sx prop
 
-## Learn More
+## Performance Optimizations
 
-To learn more about Next.js, take a look at the following resources:
+- Lazy loading for images and components
+- Optimized YouTube embed with facade pattern
+- Proper heading hierarchy for accessibility
+- Semantic HTML elements
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Advanced CSS Technique
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Used CSS Grid with fallback to Flexbox for the main layout, with a modern aspect-ratio property for responsive video container.

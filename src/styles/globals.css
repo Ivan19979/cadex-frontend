@@ -1,0 +1,55 @@
+/* app/globals.css */
+@layer base {
+  :root {
+    /* Цвета из макета */
+    --primary: #2563eb;
+    --primary-dark: #1d4ed8;
+    --secondary: #64748b;
+    --border: #e2e8f0;
+    --background: #f8fafc;
+    --white: #ffffff;
+
+    /* Текст */
+    --text-primary: #1e293b;
+    --text-secondary: #64748b;
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    color: var(--text-primary);
+    background-color: var(--white);
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* Сброс стилей для кнопок */
+  button {
+    font-family: inherit;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+
+  /* Стили для Material-UI компонентов */
+  .MuiContainer-root {
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+  }
+
+  @media (min-width: 900px) {
+    .MuiContainer-root {
+      padding-left: 32px !important;
+      padding-right: 32px !important;
+    }
+  }
+}
