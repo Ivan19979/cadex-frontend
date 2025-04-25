@@ -56,7 +56,7 @@ export default function ContactPage() {
 
       <Container 
         maxWidth="md" 
-        sx={{ py: 8 }}
+        sx={{ py: 3 }}
         component={motion.div}
         initial="hidden"
         animate={headerInView ? "visible" : "hidden"}
