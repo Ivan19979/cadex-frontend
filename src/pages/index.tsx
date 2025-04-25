@@ -4,7 +4,6 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import OptimizedYouTubeEmbed from '../components/OptimizedYouTubeEmbed';
 import { CheckCircle, Rocket, Settings, BarChart } from '@mui/icons-material';
-import '../styles/globals.css';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
@@ -48,10 +47,10 @@ const staggerContainer = {
   }
 };
 
-const AnimatedGrid = motion(Grid);
-const AnimatedBox = motion(Box);
-const AnimatedTypography = motion(Typography);
-const AnimatedButton = motion(Button);
+const AnimatedGrid = motion.create(Grid);
+const AnimatedBox = motion.create(Box);
+const AnimatedTypography = motion.create(Typography);
+const AnimatedButton = motion.create(Button);
 
 export default function HomePage() {
   const [heroRef, heroInView] = useInView({ threshold: 0.1, triggerOnce: true });
