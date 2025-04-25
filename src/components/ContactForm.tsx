@@ -15,7 +15,7 @@ export default function ContactForm({ onSuccess }: { onSuccess: (str: string) =>
     try {
       const res = await axios.post('/api/contact', data);
       console.log(res);
-      if (res.statusText === 'OK') {
+      if (res.status === 200) {
         onSuccess(res.data.message);
       }
       
