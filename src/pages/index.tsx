@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     description: 'Optimized algorithms for fast conversion of even the most complex CAD models',
     images: [
       {
-        url: 'https://www.cadexchanger.com/og-home.jpg',
+        url: '/og-home.webp',
         width: 1200,
         height: 630,
       },
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Professional 3D CAD Data Conversion',
     description: 'Optimized algorithms for fast CAD conversion',
-    images: ['https://www.cadexchanger.com/og-home.jpg'],
+    images: ['/og-home.webp'],
   },
 };
 
@@ -66,12 +66,12 @@ export default function HomePage() {
         
         <meta property="og:title" content="Professional 3D CAD Data Conversion" />
         <meta property="og:description" content="Optimized algorithms for fast CAD conversion" />
-        <meta property="og:image" content={`${process.env.NEXT_PUBLIC_SITE_URL}/og-home.jpg`} />
+        <meta property="og:image" content={`/og-home.webp`} />
         <meta property="og:url" content={`${process.env.NEXT_PUBLIC_SITE_URL}`} />
         
         <meta name="twitter:title" content="Professional 3D CAD Data Conversion" />
         <meta name="twitter:description" content="Optimized algorithms for fast CAD conversion" />
-        <meta name="twitter:image" content={`${process.env.NEXT_PUBLIC_SITE_URL}/og-home.jpg`} />
+        <meta name="twitter:image" content={`/og-home.webp`} />
         
         <script type="application/ld+json">
           {JSON.stringify({

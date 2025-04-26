@@ -40,7 +40,7 @@ export default function OptimizedYouTubeEmbed() {
     }} onClick={() => setShowVideo(true)}>
       <Box
         component="img"
-        src="/cad-exchanger.jpeg"
+        src="/og-home.webp"
         alt="CAD Exchanger Demo Video"
         sx={{
           position: 'absolute',
