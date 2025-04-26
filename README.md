@@ -9,14 +9,13 @@
 
 ## Hosting
 
-The project is deployed on Vercel: [Live Demo](https://your-vercel-app.vercel.app)
+The project is deployed on Vercel: [Live Demo](https://cadex-frontend.vercel.app/)
 
 ## Technical Choices
 
 - **Framework**: Next.js for SSR, routing and API routes
 - **UI Library**: Material-UI for components and theming
 - **Form Handling**: react-hook-form for form validation and submission
-- **YouTube Embed**: lite-youtube-embed for better LCP performance
 - **Styling**: Emotion CSS-in-JS with Material-UI's sx prop
 
 ## Performance Optimizations
